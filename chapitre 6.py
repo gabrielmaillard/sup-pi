@@ -34,13 +34,9 @@ def somme_liste(t):
 
 def equilibre_lineaire(t):
     """equilibre_lineaire(t: list[int]) -> int"""
-    partie_g = 0
-    partie_d = somme_liste(t)
-    delta_eq = -partie_d
+    delta_eq = -somme_liste(d)
     for i in range(len(t)):
-        partie_g += t[i]
-        partie_droite -= t[i]
-        delta_k = partie_gauche - partie_droite
+        delta_k += 2*t[i]
         if delta_k < delta_eq:
             delta_eq = delta_k
     return delta_eq
@@ -112,4 +108,4 @@ def cherche_somme_opti(t):
     t = tri_fusion(t)
     return cherche_somme_croissant(t)
 
-# La complexité l'algorithme du tri fusion vaut nlog(n) et celle de cherche_somme_croissant vaut n. La complexite de cherche_somme_opti vaut donc log(n)(n+1), c'est-à-dire GrandTeta(nlog(n))
+# La complexité l'algorithme du tri fusion vaut nlog(n) et celle de cherche_somme_croissant vaut n. La complexite de cherche_somme_opti vaut donc GrandTeta(n(log(n)+1)), c'est-à-dire GrandTeta(nlog(n)).
