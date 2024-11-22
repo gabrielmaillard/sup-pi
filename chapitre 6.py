@@ -109,3 +109,17 @@ def cherche_somme_opti(t):
     return cherche_somme_croissant(t)
 
 # La complexité l'algorithme du tri fusion vaut nlog(n) et celle de cherche_somme_croissant vaut n. La complexite de cherche_somme_opti vaut donc GrandTeta(n(log(n)+1)), c'est-à-dire GrandTeta(nlog(n)).
+
+## Exercice 6 Fin de Chapitre
+
+# La complexité de la fonction f1 est en O(n^2)
+
+# La complexité de la fonction f2 est en O(n^2)
+
+# La complexité de la fonction f3 est en O(n^(3/2))
+
+# La complexité de la fonction f4 est en O(log(n))
+
+# La complexité de la fonction f5 est en O(nlog(n))
+
+# La complexité de la fonction f6 est en O(log^2(n))
